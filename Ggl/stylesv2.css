@@ -48,6 +48,12 @@ body{
     font-size: 14px;
     font-weight:500;
 }
-.blucky{
-    display: inline;
+.text
+{
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
+
