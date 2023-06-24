@@ -6,6 +6,11 @@ body{
 .avatar{
     width: 150px;
 }
+@keyframes color-swap
+{
+    from {background-color: #000b6d;}
+    to {background-color: #ec9349;}
+}
 .card
 {
     padding: 20px;
@@ -15,7 +20,19 @@ body{
     margin: 0 auto;
     color: #e0dfdf;
     background-color: #000b6d;
-    border-bottom: 5px solid #ec9349;
+    box-shadow: 10px 10px 3px #ec9349;
     text-align: center;
 
+}
+.card:hover
+{
+    animation-name: color-swap;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+h3:hover, p:hover, h4:hover
+{
+    text-decoration: underline;
+    text-transform: uppercase;
 }
