@@ -34,3 +34,47 @@ Can Also center content using a flex-box = (display: flex;)
  - To seperate items within same inline of flexbox either add margin to left & right of item or chagne value 
  of justify content to space-around to evenly distribute space around items
 
+Browsers will automatically format some aspects of the css with a built in style stylesheet
+ -If you do not specify attributes some will automatically be given
+
+ For HTML filepaths 
+- use ../ to go one level up
+- use / to go to the root folder
+- use filename.type if the file is located in the current folder
+- use filefolder/filename.type if the file is located in the filefolder in the current folder
+
+Flexbox takes everychild of a parent div and turns it into a column
+ - However, it only effects direct children, so "grandchildren" will not be effected
+ - So if you want to seperate the application of flexbox attributes, create divs for elements you 
+ want to be affected
+
+A utility class is a class that only sets a single css property
+ - give the html attribute the class name of the utility class, then
+ in the css file create an attribute with name of utility, and provide it with
+ one attribute
+ - Allows you to apply the attribute of that class to any html tag, without having to edit each 
+  individuals tags class
+
+You can have more than one class for an html element
+- To do so put a space between each class name for the html element
+
+Justify Spacing is as follows
+- space-around = space before, between, and after items
+- space-evenly = items will have equal space around them
+- space-between = itesm will ahve space between them
+
+Flexbox Containers by defualt are display block
+
+The power of inheritance is the ability to write DRYer code
+ - Certain properties can be inhreted by children of the body tag, 
+  this can prevent reptition of things such as text-align center
+ - Only certain properties can be inherted
+ - Feels similar to utility classes
+
+Web Safe fonts can remove the necessity of server sending font information to client
+
+Can shorthand margin attribute by doing
+- margin: (top) (right) (bottom) (left); 
+ + Order is clockwise
+- Can further shorthand in the form of margin: (top and bottom) (right and left)
+ + useful if top and bottom have same values and right and left have same values 
