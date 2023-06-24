@@ -1,0 +1,36 @@
+
+
+Create divs to sepereate "blocks" of content from one another
+
+Create Classes to apply changes to entire groups of content
+ - Utilize margin left & right auto to center content
+  + must have a width attribute, and display block as well to create centering
+ - Utilize padding to create space between div "block" and content within div
+ - Utilize border and border radius to create border around content
+
+Try not to use pure black and white on pages, creates unpleasing look, instead use hex values that are ligther/darker
+
+Utilize the Box Model:Organize placement of content around these elements:
+- Margin: Seperating edges of div from page/ one another
+- Border: Essentially space div takes up
+- Padding: Area around content
+- Content 
+
+Use line-height instead of height
+
+Can also Center content using text-align:center; in main div of webpage
+- This method is used to center content within the div of main "block"
+ + tell contianer all inline elements should align to the center
+
+Can Also center content using a flex-box = (display: flex;)
+ - Flexbox always consinst of a contianer and its children
+  + must wrap content around div tag and children classe below will have atrribute applied
+ - To use create a css element for your div, then state
+ {
+    display: flex;
+    justify-content: center;
+ }
+  + This will place everything in line and center it as well
+ - To seperate items within same inline of flexbox either add margin to left & right of item or chagne value 
+ of justify content to space-around to evenly distribute space around items
+
