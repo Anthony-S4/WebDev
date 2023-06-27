@@ -78,3 +78,40 @@ Can shorthand margin attribute by doing
  + Order is clockwise
 - Can further shorthand in the form of margin: (top and bottom) (right and left)
  + useful if top and bottom have same values and right and left have same values 
+
+ Background Images are not in the html tags they are in the css file
+  -Specify Background image using 
+   +background-image: url("image filepath");
+  - To scale background to size of browser use 
+   + background-size: cover;
+
+Utilize google fonts to find fonts
+- Provides code to place in head of html and css file 
+
+Buttons do NOT inheret font families
+ - can achive inheritance by using 
+  + font-family: inherit;
+
+Can use local fonts in the project by placing ttf file into working directory
+ - With font file in directory add 
+   + @font-face { src: url("font file path"); font-family: font_name;}
+ - Then to use, in css file in body of whatever taret html tag is, use attribute
+   + font-fmaily; font_name;
+
+<Span> tag allows you to select indivudal text within a tag (nesting) so that you can 
+apply styling to that specfic element
+ - span is inline, divs are block based
+ - Can give spann a class, then target that class in css file
+ - Since span is like div, can use tags liek border-bottom, etc.
+
+id specifier is very similar to class specifier 
+ - html syntax is the same but differ in purpose and css syntax
+ - in css file use #id_name instead of .id_name
+ - use id if element is unique and styling will only apply to that element
+
+ Can achive shadows on text using 
+  - text-shadow: (+/-)distance(right/left) (+/-)distance(below/above)  blur color
+   + sytnax text-shadow: 5px 2px black;
+ - Can achive glow effect using shadows by setting firt 2 parametrs to zero and positive blur value
+  + text-shadow: 0px 0px 5px black;
+  
