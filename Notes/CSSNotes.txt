@@ -111,7 +111,55 @@ id specifier is very similar to class specifier
 
  Can achive shadows on text using 
   - text-shadow: (+/-)distance(right/left) (+/-)distance(below/above)  blur color
-   + sytnax text-shadow: 5px 2px black;
+   + sytnax text-shadow: 5px 2px 1px black;
  - Can achive glow effect using shadows by setting firt 2 parametrs to zero and positive blur value
   + text-shadow: 0px 0px 5px black;
-  
+  Can make an image round by setting border-radius to 50%
+   + border-radius: 50%;
+  Can group multiple elements by comma seperating them in css file
+   - will apply css styling to all elements
+
+  Another centering teqchnique is to use 
+  {
+   - display: flex;
+   - flex-directiion: column;
+   - align-items: center;
+  }
+  - This means create flexbox which places everyting in same row, but then chagne direction to column to make 
+    everythign same column, then finally align them to be centered.
+    + Applying this to body tag centers every child of body
+
+ Centering:
+ {
+  display: flex;
+  justify-content: center;
+ }
+ - This method places all items into a row then chooses placement across row based of justify-content attribute
+    +has control over horizontal line(MAIN AXIS)
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ - This method changes direction from main axis (row) placement, to cross axis(col) placement
+   +flex-direction by default is a row, must set to column to create col structure
+ {
+    display: flex;
+    justify-content: end; (start, center, end, space-around, space-evenly, space-between)
+    align-items: center;  (start, center, end)
+ }
+ - Using a combination of both you can change placement of object around webpage
+  +can change vertical and horizontal placment using align-items and justify-content respectively
+   + align-items has default value stretch(will take up entire column)
+
+Basically you have two axis, justify-content controls x axis, align-items controls y axis
+ -BUT if you use flex-direction and change the value to column, then the axis direction changes
+  + defualt flex direction (row): justify-content(main axis,X axis) \
+                                  align-items(cross axis, Y axis)    \ (NOTICE X AND Y (DIRECTIONS) FLIPPED)
+  + flex-direction: column: justify-content(main axis, Y axis)       / 
+                            align-items(cross axis,X axis)          /
+
+Text-align will only center in-line elements inside of ints contianer
+ - <div> tags are display block, so text-align: center; will not apply
+
+(tag,id,class):hover can be used to style based on if element is being hovered over
